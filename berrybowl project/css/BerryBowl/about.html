@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | BerryBowl</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B</span>
+        <span>BerryBowl</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI Calculator</a></li>
+        <li><a href="meals.html">Meal Plans</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">About the project</p>
+      <h1>About BerryBowl</h1>
+      <p>
+        BerryBowl is a modern healthy food website created to help users understand nutrition,
+        choose better meals, and build better eating habits.
+      </p>
+    </section>
+
+    <section class="section container about-layout">
+      <div class="panel">
+        <h2>Our Purpose</h2>
+        <p>
+          The purpose of BerryBowl is to make healthy eating easier, more attractive, and more
+          accessible. Many people want to improve their lifestyle but do not know where to start.
+          This website provides a simple starting point by offering BMI calculation, meal plans,
+          recipes, and goal-based meal filtering.
+        </p>
+
+        <p>
+          The website is designed for everyone who wants healthy food and a better diet. It supports
+          different goals, including weight loss, muscle gain, balanced eating, and healthy weight
+          gain for underweight users.
+        </p>
+      </div>
+
+      <div class="panel soft-panel">
+        <h2>Why BerryBowl?</h2>
+
+        <div class="info-list">
+          <div>
+            <strong>Simple:</strong>
+            <span>Easy navigation and clear page structure.</span>
+          </div>
+
+          <div>
+            <strong>Useful:</strong>
+            <span>BMI calculator, meal plans, recipes, and filters.</span>
+          </div>
+
+          <div>
+            <strong>Inclusive:</strong>
+            <span>Supports underweight users with healthy weight gain plans.</span>
+          </div>
+
+          <div>
+            <strong>Responsive:</strong>
+            <span>Works on desktop, tablet, and mobile screens.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Project Technologies</p>
+        <h2>How the website is built</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">HTML</div>
+          <h3>Structure</h3>
+          <p>HTML is used to create pages, sections, navigation, forms, and content cards.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">CSS</div>
+          <h3>Design</h3>
+          <p>CSS is used for colors, layout, responsive design, cards, buttons, and typography.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">JS</div>
+          <h3>Interactivity</h3>
+          <p>JavaScript powers the BMI calculator, filtering, searching, and contact form validation.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">DB</div>
+          <h3>Data Handling</h3>
+          <p>JavaScript arrays and localStorage are used to handle recipes, meals, BMI history, and messages.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark">B</span>
+          <span>BerryBowl</span>
+        </a>
+        <p>A modern healthy food website designed to support better eating habits.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="meals.html">Meal Plans</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+
+      <div>
+        <h4>Goals</h4>
+        <p>Weight loss • Muscle gain • Balanced diet • Healthy weight gain</p>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> BerryBowl. Internet Programming Project.
+    </p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

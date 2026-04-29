@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Plans | BerryBowl</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B</span>
+        <span>BerryBowl</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI Calculator</a></li>
+        <li><a href="meals.html" class="active">Meal Plans</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">Daily nutrition made simple</p>
+      <h1>Daily Meal Plans</h1>
+      <p>
+        Search and filter meal plans by goal. BerryBowl includes weight loss, muscle gain,
+        balanced diet, and healthy weight gain plans for underweight users.
+      </p>
+    </section>
+
+    <section class="section container">
+      <div class="filters">
+        <div class="input-group">
+          <label for="goalFilter">Filter by goal</label>
+          <select id="goalFilter">
+            <option value="all">All Goals</option>
+            <option value="weight-loss">Weight Loss</option>
+            <option value="muscle-gain">Muscle Gain</option>
+            <option value="balanced">Balanced Diet</option>
+            <option value="weight-gain">Healthy Weight Gain / Underweight</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="mealSearch">Search meals</label>
+          <input type="text" id="mealSearch" placeholder="Search oats, chicken, salmon, smoothie..." />
+        </div>
+      </div>
+
+      <div id="mealGrid" class="meal-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark">B</span>
+          <span>BerryBowl</span>
+        </a>
+        <p>A modern healthy food website designed to support better eating habits.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="meals.html">Meal Plans</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+
+      <div>
+        <h4>Goals</h4>
+        <p>Weight loss • Muscle gain • Balanced diet • Healthy weight gain</p>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> BerryBowl. Internet Programming Project.
+    </p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

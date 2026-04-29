@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator | BerryBowl</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B</span>
+        <span>BerryBowl</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html" class="active">BMI Calculator</a></li>
+        <li><a href="meals.html">Meal Plans</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-button">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">Know your starting point</p>
+      <h1>BMI Calculator</h1>
+      <p>
+        Enter your height and weight to calculate your Body Mass Index. The website will
+        suggest a nutrition goal, including healthy weight gain support for underweight users.
+      </p>
+    </section>
+
+    <section class="section container bmi-layout">
+      <div class="panel">
+        <h2>Calculate Your BMI</h2>
+
+        <form id="bmiForm" class="form-card">
+          <div class="input-group">
+            <label for="height">Height in centimeters</label>
+            <input type="number" id="height" placeholder="Example: 170" min="80" max="250" required />
+          </div>
+
+          <div class="input-group">
+            <label for="weight">Weight in kilograms</label>
+            <input type="number" id="weight" placeholder="Example: 65" min="20" max="300" required />
+          </div>
+
+          <button type="submit" class="btn primary-btn full-btn">Calculate BMI</button>
+        </form>
+
+        <div id="bmiResult" class="result-box">
+          <h3>Your result will appear here</h3>
+          <p>Enter your height and weight, then click calculate.</p>
+        </div>
+      </div>
+
+      <aside class="panel soft-panel">
+        <h2>BMI Categories</h2>
+
+        <div class="info-list">
+          <div>
+            <strong>Underweight:</strong>
+            <span>Below 18.5 — may need healthy weight gain support.</span>
+          </div>
+
+          <div>
+            <strong>Normal:</strong>
+            <span>18.5 to 24.9 — balanced diet is recommended.</span>
+          </div>
+
+          <div>
+            <strong>Overweight:</strong>
+            <span>25 to 29.9 — weight management meals may help.</span>
+          </div>
+
+          <div>
+            <strong>Obese:</strong>
+            <span>30 or above — healthy lifestyle changes are important.</span>
+          </div>
+        </div>
+
+        <div class="history-box">
+          <h3>Recent BMI Results</h3>
+          <div id="bmiHistory">
+            <p class="muted">No BMI history yet.</p>
+          </div>
+        </div>
+
+        <p class="small-note">
+          BMI is a simple guide and does not replace medical advice. Athletes, pregnant users,
+          and people with health conditions should consult a professional.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark">B</span>
+          <span>BerryBowl</span>
+        </a>
+        <p>A modern healthy food website designed to support better eating habits.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="meals.html">Meal Plans</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+
+      <div>
+        <h4>Goals</h4>
+        <p>Weight loss • Muscle gain • Balanced diet • Healthy weight gain</p>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> BerryBowl. Internet Programming Project.
+    </p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
